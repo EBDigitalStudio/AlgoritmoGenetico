@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo Genetico | Proyecto IA</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <header class="app-header text-center">
+            <span class="eyebrow">Proyecto de Inteligencia Artificial</span>
+            <h1>Calculo de Algoritmo Genetico</h1>
+            <p>Simulador visual de cruce binario y evaluacion fitness.</p>
+        </header>
+
+        <main class="container">
+            <section class="row justify-content-center align-items-stretch g-4">
+                <div class="col-12 col-lg-5">
+                    <div class="card app-card h-100">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="section-heading">
+                                <span class="section-kicker">Entrada</span>
+                                <h2>Configuracion del cruce</h2>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label" for="txtPadre">Padre</label>
+                                <input class="form-control form-control-lg input-tech" type="number" id="txtPadre"
+                                    name="txtPadre" placeholder="Ej: 11010101">
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label" for="txtMadre">Madre</label>
+                                <input class="form-control form-control-lg input-tech" type="number" id="txtMadre"
+                                    name="txtMadre" placeholder="Ej: 11010101">
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label" for="txtPuntoCorte">Punto de corte</label>
+                                <input class="form-control form-control-lg input-tech" type="number" id="txtPuntoCorte"
+                                    name="txtPuntoCorte" placeholder="Ej: 4">
+                            </div>
+
+                            <button class="btn btn-primary btn-lg btn-tech w-100" onclick="calularCruce()">
+                                Calcular cruce
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-7">
+                    <div class="card app-card result-card h-100">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="section-heading">
+                                <span class="section-kicker">Resultado</span>
+                                <h2>Panel genetico</h2>
+                            </div>
+
+                            <div class="result-legend" aria-label="Leyenda de resultados">
+                                <span class="legend-item legend-father">Padre</span>
+                                <span class="legend-item legend-mother">Madre</span>
+                                <span class="legend-item legend-child-one">Hijo 1</span>
+                                <span class="legend-item legend-child-two">Hijo 2</span>
+                                <span class="legend-item legend-fitness">Fitness</span>
+                            </div>
+
+                            <label id="lblResultado" class="result-panel">
+                                Ingresa los cromosomas binarios y el punto de corte para visualizar el cruce.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer text-center">
+            <p>&copy; 2026 Proyecto de Inteligencia Artificial. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
