@@ -174,6 +174,23 @@ if (puntoInput) {
     puntoInput.addEventListener("input", handleRealtimeValidation);
 }
 
+function reiniciarCalculo() {
+    const campos = [padreInput, madreInput, puntoInput];
+
+    campos.forEach((campo) => {
+        if (campo) {
+            campo.value = "";
+            clearInvalid(campo);
+        }
+    });
+
+    clearResultPanel();
+
+    if (padreInput) {
+        padreInput.focus();
+    }
+}
+
 function calularCruce() {
     let padre = document.getElementById("txtPadre");
     let madre = document.getElementById("txtMadre");
