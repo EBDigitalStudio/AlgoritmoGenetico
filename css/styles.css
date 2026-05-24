@@ -153,6 +153,25 @@ body {
     box-shadow: 0 1.25rem 2.4rem rgba(49, 216, 255, 0.24);
 }
 
+.btn-reset {
+    min-height: 3.15rem;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.95rem;
+    color: var(--text-main);
+    font-weight: 800;
+    background: rgba(255, 255, 255, 0.045);
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.btn-reset:hover,
+.btn-reset:focus {
+    border-color: rgba(49, 216, 255, 0.62);
+    color: var(--text-main);
+    background: rgba(49, 216, 255, 0.08);
+    box-shadow: 0 0 0 0.22rem rgba(49, 216, 255, 0.12);
+    transform: translateY(-1px);
+}
+
 .result-card {
     min-height: 100%;
 }
